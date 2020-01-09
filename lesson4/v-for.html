@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-for</title>
+</head>
+<body>
+<div id="app">
+        <li v-for="item in items">{{item.message}}</li>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script type="text/javascript">
+    var app = new Vue({
+        el: "#app",
+        data: {
+            items:[
+                {message:"A"},
+                {message:"B"},
+                {message:"C"},
+                {message:"D"},
+                {message:"E"}
+            ]
+        }
+    })
+</script>
+</body>
+</html>
